@@ -7,7 +7,7 @@ export default function Principal(){
     const img = images.galeria.principais
     
     return (
-        <section id='galeria1' className='grid grid-cols-3 grid-rows-6 gap-4 m-8'>
+        <section id='galeria1' className='grid grid-cols-3 grid-rows-6 gap-8 my-16 mx-56'>
           <div className={
             `w-full h-full
             row-span-2

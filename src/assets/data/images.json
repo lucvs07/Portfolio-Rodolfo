@@ -1,7 +1,21 @@
 {
     "galeria":{
-        "aniversarios":[],
-        "empresas":[],
+        "aniversarios":[
+            "/images/galeria/aniversarios/aniversario01.jpg",
+            "/images/galeria/aniversarios/aniversario02.jpg",
+            "/images/galeria/aniversarios/aniversario03.jpg",
+            "/images/galeria/aniversarios/aniversario04.jpg",
+            "/images/galeria/aniversarios/aniversario05.jpg",
+            "/images/galeria/aniversarios/aniversario06.jpg"
+        ],
+        "empresas":[
+            "/images/galeria/empresas/empresa01.jpg",
+            "/images/galeria/empresas/empresa02.jpg",
+            "/images/galeria/empresas/empresa03.jpg",
+            "/images/galeria/empresas/empresa04.jpg",
+            "/images/galeria/empresas/empresa05.jpg",
+            "/images/galeria/empresas/empresa06.jpg"	
+        ],
         "sociais":[
             "/images/galeria/sociais/sociais01.jpg",
             "/images/galeria/sociais/sociais02.jpg",

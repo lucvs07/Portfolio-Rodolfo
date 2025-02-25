@@ -1,13 +1,13 @@
 import '../../App.css'
 import images from '../../assets/data/images.json'
 
-export default function Social(){
+export default function Festas(){
     const hover = 'transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102'
     const bgImg = 'bg-cover bg-center'
-    const img = images.galeria.sociais
+    const img = images.galeria.aniversarios
     
     return (
-        <section id='social' className='grid grid-cols-3 grid-rows-6 gap-8 my-16 mx-56'>
+        <section id='festas' className='grid grid-cols-3 grid-rows-4 gap-8 my-16 mx-56'>
           <div className={
             `w-full h-full
             row-span-2
@@ -22,6 +22,7 @@ export default function Social(){
           <div className={
             `w-full h-full
             row-span-2
+            col-span-2
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -31,7 +32,8 @@ export default function Social(){
           </div>
 
           <div className={
-            `w-full h-64
+            `w-full h-full
+            row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -42,7 +44,6 @@ export default function Social(){
           </div>
           <div className={
             `w-full h-full
-            row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -58,41 +59,17 @@ export default function Social(){
             ${hover}
             rounded-md`}
             style={{
-              backgroundImage: `url(${img[4]})`,
-            }}
-            >
-          </div>
-          <div className={
-            `w-full h-full
-            row-span-2
-            ${bgImg} 
-            ${hover}
-            rounded-md`}
-            style={{
               backgroundImage: `url(${img[5]})`,
             }}
             >
           </div>
           <div className={
-            `w-full h-full
-            row-span-3
+            `w-full h-64
             ${bgImg} 
             ${hover}
             rounded-md`}
             style={{
-              backgroundImage: `url(${img[6]})`,
-            }}
-            >
-          </div>
-          <div className={
-            `w-full h-full
-            col-span-2
-            row-span-2
-            ${bgImg} 
-            ${hover}
-            rounded-md`}
-            style={{
-              backgroundImage: `url(${img[7]})`,
+              backgroundImage: `url(${img[4]})`,
             }}
             >
           </div>
