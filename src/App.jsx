@@ -1,6 +1,8 @@
 
 import './App.css'
 import { Envelope, Phone, InstagramLogo} from '@phosphor-icons/react'
+import Principal from './components/Galerias/Principal.jsx'
+import Social from './components/Galerias/Social.jsx'
 
 function App() {
   const hover = 'transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102'
@@ -28,34 +30,8 @@ function App() {
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#contato'>Contato</a>
           </nav>
         </section>
-        <section id='galeria1' className='grid grid-cols-3 grid-rows-3 gap-4 m-8'>
-          <div className={`row-span-2 w-full h-full ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`w-full h-64 ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`w-full h-64 ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`row-span-2 w-full h-full ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`row-span-2 w-full h-full ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`w-full h-64 ${bgImg} ${hover} rounded-md`}>
-          </div>
-        </section>
-        <section id='galeria2' className='grid grid-cols-3 grid-rows-3 gap-4 m-8'>
-          <div className={`row-span-2 w-full h-full ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`w-full h-64 ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`w-full h-64 ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`row-span-2 w-full h-full ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`row-span-2 w-full h-full ${bgImg} ${hover} rounded-md`}>
-          </div>
-          <div className={`w-full h-64 ${bgImg} ${hover} rounded-md`}>
-          </div>
-        </section>
+        <Principal id='galeria1' />
+        <Social id='galeria2' />
       </main>
       <footer id='contato'>
         <div className='flex items-center gap-4'>
