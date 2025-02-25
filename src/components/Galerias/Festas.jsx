@@ -7,7 +7,10 @@ export default function Festas(){
     const img = images.galeria.aniversarios
     
     return (
-        <section id='festas' className='grid grid-cols-3 grid-rows-4 gap-8 my-16 mx-56'>
+        <section id='festas' className='grid grid-cols-3 grid-rows-4 gap-8 my-16 mx-56
+        max-sm:grid-cols-1
+        sm:my-8 sm:mx-8
+        xl:my-16 xl:mx-56'>
           <div className={
             `w-full h-full
             row-span-2

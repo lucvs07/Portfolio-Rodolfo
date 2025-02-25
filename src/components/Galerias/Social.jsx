@@ -7,7 +7,10 @@ export default function Social(){
     const img = images.galeria.sociais
     
     return (
-        <section id='social' className='grid grid-cols-3 grid-rows-6 gap-8 my-16 mx-56'>
+        <section id='social' className='grid grid-cols-3 grid-rows-6 gap-8 my-16 mx-56
+        max-sm:grid-cols-1
+        sm:my-8 sm:mx-8
+        xl:my-16 xl:mx-56'>
           <div className={
             `w-full h-full
             row-span-2
