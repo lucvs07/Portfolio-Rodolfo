@@ -13,7 +13,7 @@ import {useState} from 'react'
 function App() {
   const [result, SetResult] = useState('');
 
-  const apiKey = '96f3bb26-6180-4d6e-b84b-45ffbd89791b'
+  const apikEY = import.meta.env.ACCESS_KEY;
 
   const onSubmit = async (event) => {
     event.preventDefault();
