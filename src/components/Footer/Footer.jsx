@@ -1,4 +1,4 @@
-import { Envelope, WhatsappLogo} from '@phosphor-icons/react'
+import { Envelope, WhatsappLogo, LinkedinLogo} from '@phosphor-icons/react'
 export default function Footer(){
 // Número do Telefone
   const phone = '5511971113726';
@@ -13,29 +13,50 @@ export default function Footer(){
     window.location.href = emailURL;
   };
 
+  const linkedin = 'https://www.linkedin.com/in/fotografo-rodolfo-rizzo/';
+  const redirectToLinkedin = () => {
+    window.open(linkedin, '_blank');
+  };
+
   const hover = 'transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102'
+  const hoverText = 'transition delay-150 duration-300 ease-in-out hover:underline hover:decoration-solid hover:text-gray-300 cursor-pointer'
 
     return (
         <footer id='contato' className='border-t-1 border-solid border-black dark:border-white'>
-        <div className='grid grid-cols-2 gap-4 m-8'>
-          <div className={`w-full h-full rounded-md border-2 border-solid p-4 ${hover}`}>
-            <div className='flex justify-between items-center'>
-              <h3 className='font-normal antialiased text-3xl '>Email</h3>
-              <Envelope weight='light' size={48} onClick={redirectToEmail}
-              className={`cursor-pointer ${hover}`}/>
+          <div className={`w-full h-full p-4 my-12 flex gap-8 items-start justify-center`}>
+          <div className='flex flex-col gap-4 items-start'>
+                <h2 className='font-medium antialiased text-2xl text-center'>Seções</h2>
+                <nav className='flex flex-col justify-center gap-4  font-normal antialiased text-1xl '>
+                    <a className={`${hoverText} hover:text-gray-300 cursor-pointer`} href='#home'>Home</a>
+                    <a className={`${hoverText} hover:text-gray-300 cursor-pointer`} href='#social'>Casamento</a>
+                    <a className={`${hoverText} hover:text-gray-300 cursor-pointer`} href='#empresas'>Empresarial</a>
+                    <a className={`${hoverText} hover:text-gray-300 cursor-pointer`} href='#festas'>Festas</a>
+                    <a className={`${hoverText} hover:text-gray-300 cursor-pointer`} href='#galeria'>Galeria</a>
+                </nav>
             </div>
-            <p className='font-normal antialiased text-1xl'>rodolfo@macaverdefilmes.com</p>
-          </div>
+            <div className='flex flex-col gap-4 items-start'>
+                <h2 className='font-medium antialiased text-2xl text-center'>Entre em Contato</h2>
+                <div className='flex items-center gap-4'>
+                    <Envelope weight='fill' size={40} onClick={redirectToEmail}
+                    className={`cursor-pointer ${hover}`}/>
+                    <p className={`font-normal antialiased text-1xl ${hoverText}`} onClick={redirectToEmail}>rodolfo@macaverdefilmes.com</p>
+                </div>
+    
+                <div className='flex items-center gap-4'>
+                    <WhatsappLogo weight='fill' size={40} onClick={redirectToWhatsapp}
+                    className={`cursor-pointer ${hover}`}/>
+                    <p className={`font-normal antialiased text-1xl ${hoverText}`} onClick={redirectToWhatsapp}>11. 97111-3726</p>
+                </div>
 
-          <div className={`w-full h-full rounded-md border-2 border-solid p-4 ${hover}`}>
-            <div className='flex justify-between items-center'>
-              <h3 className='font-normal antialiased text-3xl '>Phone</h3>
-              <WhatsappLogo weight='light' size={48} onClick={redirectToWhatsapp}
-              className={`cursor-pointer ${hover}`}/>
+                <div className='flex items-center gap-4'>
+                    <LinkedinLogo weight='fill' size={40} onClick={redirectToLinkedin}
+                    className={`cursor-pointer ${hover}`}/>
+                    <p className={`font-normal antialiased text-1xl ${hoverText}`} onClick={redirectToLinkedin}>Rodolfo Rizzo</p>
+                </div>
             </div>
-            <p className='font-normal antialiased text-1xl'>11. 97111-3726</p>
-          </div>
+            
+                
         </div>
-      </footer>
+        </footer>
     )
 }

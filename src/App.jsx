@@ -13,13 +13,14 @@ import {useState} from 'react'
 function App() {
   const [result, SetResult] = useState('');
 
-  const apikEY = import.meta.env.ACCESS_KEY;
+  const apiKey= import.meta.env.VITE_API_KEY;
 
   const onSubmit = async (event) => {
     event.preventDefault();
     SetResult('Enviando...')
     const formData = new FormData(event.target);
     formData.append('access_key', apiKey);
+    formData.append('subject', 'Contato do Site');
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -45,8 +46,8 @@ function App() {
     <>
       <main>
         <section className='flex flex-col gap-0.5 mt-4'>
-          <h1 className='font-medium antialiased text-8xl text-center'>Rodolfo Rizzo</h1>
-          <TitleSection title='Photographer'/>
+          <h1 className='font-medium antialiased text-8xl text-center' >Rodolfo Rizzo</h1>
+          <TitleSection title='Photographer' idName='home'/>
           <nav className='flex justify-center gap-8 mt-4 pb-4 font-normal antialiased text-2xl text-center border-b-2 border-black dark:border-white'>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#social'>Casamento</a>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#empresas'>Empresarial</a>
@@ -55,24 +56,24 @@ function App() {
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#contato'>Contato</a>
           </nav>
         </section>
-        <Principal id='galeria1' />
+        <Principal />
 
-        <TitleSection title='Fotografia de Casamentos e Noivados'/>
-        <Social id='social' />
+        <TitleSection title='Fotografia de Casamentos e Noivados' idName='social'/>
+        <Social />
 
-        <TitleSection title='Fotografia de Eventos Empresariais '/>
-        <Empresas id='empresas' />
+        <TitleSection title='Fotografia de Eventos Empresariais ' idName='empresas'/>
+        <Empresas/>
 
-        <TitleSection title='Fotografia de Festas e Aniversários'/>
-        <Festas id='festas' />
+        <TitleSection title='Fotografia de Festas e Aniversários' idName='festas'/>
+        <Festas />
 
-        <TitleSection title='Sobre Mim'/>
-        <section id='sobre' className='grid grid-cols-2 grid-rows-3 gap-12 my-16 mx-56' >
+        <TitleSection title='Sobre Mim' idName='sobre'/>
+        <section className='grid grid-cols-2 grid-rows-3 gap-12 my-16 mx-56 ' >
         
           <p className='font-normal antialiased text-2xl text-justify w-full'>
           Registrando momentos desde 2011, atuo com fotografia empresarial e cobertura fotográfica de eventos sociais, incluindo festas, casamentos intimistas e noivados
           </p>
-          <div className='w-2xl h-full bg-[url(./assets/bg.svg)] bg-cover bg-center row-span-3'></div>
+          <div className='w-full h-full bg-[url(/images/rodolfo.jpg)] bg-cover bg-center row-span-3 rounded-md'></div>
 
           <p className='font-normal antialiased text-2xl text-justify w-full'>
           Nesses quase 15 anos de profissão tenho me dedicado a capturar detalhes e registrar momentos únicos para que cada cliente tenha uma recordação especial dos seus eventos.
@@ -85,7 +86,7 @@ function App() {
 
         </section>
 
-        <TitleSection title='Contato'/>
+        <TitleSection title='Contato' idName='contato'/>
         <section className='flex flex-col gap-4 my-16 mx-56 items-center'>
           <h3 className='font-normal antialiased text-3xl'>Gostou do meu trabalho? Solicite um orçamento</h3>
           <div>
@@ -106,7 +107,6 @@ function App() {
         </section>
       </main>
       <Footer />
-      {console.log(result)}
     </>
   )
 }
