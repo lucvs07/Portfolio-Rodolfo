@@ -9,11 +9,18 @@ export default function Principal(){
     return (
         <section className='grid grid-cols-3 grid-rows-6 gap-8 
         max-sm:grid-cols-1
+        max-sm:grid-rows-30
+        max-sm:my-16
+        max-sm:mx-8
+        max-xl:grid-rows-8
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56'>
           <div className={
             `w-full h-full
             row-span-2
+            max-xl:col-span-3
+            max-sm:col-span-1
+            max-sm:row-span-3
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -25,6 +32,9 @@ export default function Principal(){
           <div className={
             `w-full h-full
             row-span-2
+            max-xl:col-span-3
+            max-sm:col-span-1
+            max-sm:row-span-3
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -34,7 +44,12 @@ export default function Principal(){
           </div>
 
           <div className={
-            `w-full h-64
+            `w-full h-88
+            max-xl:h-156
+            max-lg:h-120
+            max-xl:col-span-3
+            max-sm:col-span-1
+            max-sm:row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -46,6 +61,10 @@ export default function Principal(){
           <div className={
             `w-full h-full
             row-span-2
+            max-xl:row-span-1
+            max-xl:col-span-3
+            max-sm:col-span-1
+            max-sm:row-span-3
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -57,6 +76,9 @@ export default function Principal(){
           <div className={
             `w-full h-full
             row-span-2
+            max-xl:row-span-1
+            max-sm:col-span-1
+            max-sm:row-span-6
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -68,6 +90,9 @@ export default function Principal(){
           <div className={
             `w-full h-full
             row-span-2
+            max-xl:row-span-1
+            max-sm:col-span-1
+            max-sm:row-span-5
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -79,6 +104,9 @@ export default function Principal(){
           <div className={
             `w-full h-full
             row-span-3
+            max-xl:row-span-1
+            max-sm:col-span-1
+            max-sm:row-span-6
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -91,6 +119,10 @@ export default function Principal(){
             `w-full h-full
             col-span-2
             row-span-2
+            max-xl:row-span-1
+            max-xl:col-span-3
+            max-sm:row-span-5
+            max-sm:col-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}

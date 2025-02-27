@@ -7,12 +7,16 @@ export default function Empresas(){
     const img = images.galeria.empresas
     
     return (
-        <section className='grid grid-cols-3 grid-rows-3 gap-8 my-16 mx-56
+        <section className='grid grid-cols-3 grid-rows-3 gap-8 
         max-sm:grid-cols-1
+        max-sm:grid-rows-6
+        max-sm:my-16
+        max-sm:mx-8
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56'>
           <div className={
             `w-full h-full
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -25,6 +29,8 @@ export default function Empresas(){
             `w-full h-full
             row-span-2
             col-span-2
+            max-sm:row-span-1
+            max-sm:col-span-1
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -34,7 +40,8 @@ export default function Empresas(){
           </div>
 
           <div className={
-            `w-full h-64
+            `w-full h-full
+            max-sm:h-120
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -65,6 +72,7 @@ export default function Empresas(){
           </div>
           <div className={
             `w-full h-64
+            max-sm:h-full
             ${bgImg} 
             ${hover}
             rounded-md`}

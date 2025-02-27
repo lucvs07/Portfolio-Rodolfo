@@ -23,7 +23,9 @@ export default function Footer(){
 
     return (
         <footer id='contato' className='border-t-1 border-solid border-black dark:border-white'>
-          <div className={`w-full h-full p-4 my-12 flex gap-8 items-start justify-center`}>
+          <div className={`w-full h-full p-4  flex gap-8 items-start justify-center
+            sm:my-8 
+            xl:my-12 `}>
           <div className='flex flex-col gap-4 items-start'>
                 <h2 className='font-medium antialiased text-2xl text-center'>Seções</h2>
                 <nav className='flex flex-col justify-center gap-4  font-normal antialiased text-1xl '>

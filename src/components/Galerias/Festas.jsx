@@ -7,8 +7,11 @@ export default function Festas(){
     const img = images.galeria.aniversarios
     
     return (
-        <section className='grid grid-cols-3 grid-rows-4 gap-8 my-16 mx-56
+        <section className='grid grid-cols-3 grid-rows-6 gap-8 
         max-sm:grid-cols-1
+        max-sm:grid-rows-8
+        max-sm:my-16
+        max-sm:mx-8
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56'>
           <div className={
@@ -26,6 +29,8 @@ export default function Festas(){
             `w-full h-full
             row-span-2
             col-span-2
+            max-sm:col-span-1
+            max-sm:row-span-1
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -47,6 +52,7 @@ export default function Festas(){
           </div>
           <div className={
             `w-full h-full
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -58,6 +64,7 @@ export default function Festas(){
           <div className={
             `w-full h-full
             row-span-2
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -68,6 +75,21 @@ export default function Festas(){
           </div>
           <div className={
             `w-full h-64
+            max-sm:h-120
+            ${bgImg} 
+            ${hover}
+            rounded-md`}
+            style={{
+              backgroundImage: `url(${img[6]})`,
+            }}
+            >
+          </div>
+          <div className={
+            `w-full h-full
+            row-span-3
+            col-span-3
+            max-sm:row-span-1
+            max-sm:col-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
