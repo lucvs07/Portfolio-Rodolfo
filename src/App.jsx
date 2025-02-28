@@ -47,7 +47,7 @@ function App() {
     <>
       <main >
         <section className='flex flex-col gap-0.5 mt-4 '>
-          <h1 className='font-medium antialiased text-8xl text-center max-sm:text-5xl sm:text-6xl' >Rodolfo Rizzo</h1>
+          <h1 className='font-medium antialiased text-8xl text-center max-sm:text-4xl sm:text-6xl' >Rodolfo Rizzo</h1>
           <TitleSection title='Photographer' idName='home'/>
           <nav className='flex flex-wrap justify-center gap-8 mt-4 pb-4 font-normal antialiased text-2xl text-center border-b-2 border-black dark:border-white max-sm:text-xl'>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#social'>Casamento</a>
@@ -76,15 +76,15 @@ function App() {
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56' >
           <div className='flex flex-col gap-4 items-center w-full p-4 row-span-2 justify-between'>
-            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-xl max-sm:text-lg'>
+            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-xl max-sm:text-sm'>
             Registrando momentos desde 2011, atuo com fotografia empresarial e cobertura fotográfica de eventos sociais, incluindo festas, casamentos intimistas e noivados
             </p>
 
-            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-xl max-sm:text-lg'>
+            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-xl max-sm:text-sm'>
             Nesses quase 15 anos de profissão tenho me dedicado a capturar detalhes e registrar momentos únicos para que cada cliente tenha uma recordação especial dos seus eventos.
             </p>
             
-            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-xl max-sm:text-lg'>
+            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-xl max-sm:text-sm'>
             Sou fotógrafo em São Paulo e atendo regiões próximas, garantindo fotos de alta qualidade que valorizam cada momento com naturalidade e profissionalismo.
             </p>
           </div>
@@ -98,7 +98,7 @@ function App() {
         max-sm:my-8
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56'>
-          <h3 className='font-normal antialiased text-3xl sm:text-nowrap max-sm:text-xl max-sm:text-wrap text-center'>Gostou do meu trabalho? Solicite um orçamento</h3>
+          <h3 className='font-normal antialiased text-3xl sm:text-nowrap max-sm:text-sm max-sm:text-wrap text-center'>Gostou do meu trabalho? Solicite um orçamento</h3>
           <div>
             <form onSubmit={onSubmit} className='grid grid-cols-2 gap-8 border-1 p-4 rounded-md '>
               <input type='text' name='Nome' placeholder='Nome' className='w-full h-12 p-4 border-1 border-solid border-black dark:border-white rounded-md'/>
