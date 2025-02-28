@@ -12,12 +12,16 @@ export default function Festas(){
         max-sm:grid-rows-7
         max-sm:my-16
         max-sm:mx-8
+        max-xl:grid-rows-8
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56'>
           <div className={
             `w-full h-full
             row-span-2
             max-sm:row-span-1
+            max-sm:col-span-1
+            max-xl:col-span-3
+            max-xl:row-span-3
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -32,6 +36,9 @@ export default function Festas(){
             col-span-2
             max-sm:col-span-1
             max-sm:row-span-1
+            max-xl:col-span-3
+            max-xl:row-span-1
+            
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -44,6 +51,9 @@ export default function Festas(){
             `w-full h-full
             row-span-2
             max-sm:row-span-1
+            max-sm:col-span-1
+            max-xl:col-span-2
+            max-xl:row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -55,6 +65,8 @@ export default function Festas(){
           <div className={
             `w-full h-full
             max-sm:row-span-1
+            max-sm:col-span-1
+            max-xl:col-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -67,6 +79,8 @@ export default function Festas(){
             `w-full h-full
             row-span-2
             max-sm:row-span-1
+            max-sm:col-span-1
+            max-xl:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -77,7 +91,11 @@ export default function Festas(){
           </div>
           <div className={
             `w-full h-64
-            max-sm:h-72
+            max-sm:h-80
+            max-sm:row-span-1
+            max-sm:col-span-1
+            max-xl:h-88
+            max-xl:col-span-3
             ${bgImg} 
             ${hover}
             rounded-md`}

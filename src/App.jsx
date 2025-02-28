@@ -76,15 +76,15 @@ function App() {
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56' >
           <div className='flex flex-col gap-4 items-center w-full p-4 row-span-2 justify-between'>
-            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-2xl max-sm:text-sm'>
+            <p className='font-normal antialiased text-2xl text-justify w-full max-sm:text-sm max-xl:text-xl'>
             Registrando momentos desde 2011, atuo com fotografia empresarial e cobertura fotográfica de eventos sociais, incluindo festas, casamentos intimistas e noivados
             </p>
 
-            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-2xl max-sm:text-sm'>
+            <p className='font-normal antialiased text-2xl text-justify w-full max-sm:text-sm max-xl:text-xl'>
             Nesses quase 15 anos de profissão tenho me dedicado a capturar detalhes e registrar momentos únicos para que cada cliente tenha uma recordação especial dos seus eventos.
             </p>
             
-            <p className='font-normal antialiased text-2xl text-justify w-full sm:text-2xl max-sm:text-sm'>
+            <p className='font-normal antialiased text-2xl text-justify w-full max-sm:text-sm max-xl:text-xl'>
             Sou fotógrafo em São Paulo e atendo regiões próximas, garantindo fotos de alta qualidade que valorizam cada momento com naturalidade e profissionalismo.
             </p>
           </div>

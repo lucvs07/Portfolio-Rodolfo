@@ -12,11 +12,15 @@ export default function Empresas(){
         max-sm:grid-rows-6
         max-sm:my-16
         max-sm:mx-8
+        max-lg:grid-rows-6
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56'>
           <div className={
             `w-full h-full
             max-sm:row-span-1
+            max-sm:col-span-1
+            max-lg:col-span-3
+            max-lg:row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -31,6 +35,7 @@ export default function Empresas(){
             col-span-2
             max-sm:row-span-1
             max-sm:col-span-1
+            max-lg:col-span-3
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -41,6 +46,9 @@ export default function Empresas(){
 
           <div className={
             `w-full h-full
+            max-sm:row-span-1
+            max-sm:col-span-1
+            max-lg:col-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -51,6 +59,8 @@ export default function Empresas(){
           </div>
           <div className={
             `w-full h-full
+            max-sm:row-span-1
+            max-sm:col-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -61,6 +71,9 @@ export default function Empresas(){
           </div>
           <div className={
             `w-full h-full
+            max-sm:row-span-1
+            max-sm:col-span-1
+            max-lg:col-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -71,6 +84,9 @@ export default function Empresas(){
           </div>
           <div className={
             `w-full h-64
+            max-sm:h-48
+            max-sm:row-span-1
+            max-sm:col-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}

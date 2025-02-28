@@ -13,6 +13,7 @@ export default function Principal(){
         max-sm:my-16
         max-sm:mx-8
         max-xl:grid-rows-8
+        min-[1439px]:grid-rows-8
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56'>
           <div className={
@@ -21,6 +22,7 @@ export default function Principal(){
             max-xl:col-span-3
             max-sm:row-span-1
             max-sm:col-span-1
+            min-[1439px]:col-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -35,6 +37,7 @@ export default function Principal(){
             max-xl:col-span-3
             max-sm:col-span-1
             max-sm:row-span-1
+            min-[1439px]:row-span-1
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -47,6 +50,8 @@ export default function Principal(){
             `w-full h-88
             max-xl:h-156
             max-lg:h-120
+            min-[1439px]:h-112
+            min-[1600px]:h-240
             max-xl:col-span-3
             max-sm:col-span-1
             max-sm:row-span-2
@@ -65,6 +70,7 @@ export default function Principal(){
             max-xl:col-span-3
             max-sm:col-span-1
             max-sm:row-span-1
+            min-[1439px]:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -79,6 +85,7 @@ export default function Principal(){
             max-xl:row-span-1
             max-sm:col-span-1
             max-sm:row-span-2
+            min-[1439px]:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -93,6 +100,7 @@ export default function Principal(){
             max-xl:row-span-1
             max-sm:col-span-1
             max-sm:row-span-2
+            min-[1439px]:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -107,6 +115,8 @@ export default function Principal(){
             max-xl:row-span-1
             max-sm:col-span-1
             max-sm:row-span-2
+            min-[1439px]:row-span-3
+            min-[1439px]:col-span-3
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -123,6 +133,7 @@ export default function Principal(){
             max-xl:col-span-3
             max-sm:row-span-1
             max-sm:col-span-1
+            min-[1439px]:col-span-3
             ${bgImg} 
             ${hover}
             rounded-md`}
