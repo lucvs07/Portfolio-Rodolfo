@@ -100,7 +100,7 @@ function App() {
         xl:my-16 xl:mx-56'>
           <h3 className='font-normal antialiased text-3xl sm:text-nowrap max-sm:text-sm max-sm:text-wrap text-center'>Gostou do meu trabalho? Solicite um orçamento</h3>
           <div>
-            <form onSubmit={onSubmit} className='grid grid-cols-2 gap-8 border-1 p-4 rounded-md '>
+            <form onSubmit={onSubmit} className='grid grid-cols-2 gap-8 border-1 p-4 rounded-md w-full'>
               <input type='text' name='Nome' placeholder='Nome' className='w-full h-12 p-4 border-1 border-solid border-black dark:border-white rounded-md'/>
               <input type='tel' name='Telefone' placeholder='Telefone' className='w-full h-12 p-4 border-1 border-solid border-black dark:border-white rounded-md'/>
               <input type='email' name='Email' placeholder='Email' className='w-full h-12 p-4 border-1 border-solid border-black dark:border-white col-span-2 rounded-md'/>

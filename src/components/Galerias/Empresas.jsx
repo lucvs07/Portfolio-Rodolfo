@@ -87,6 +87,7 @@ export default function Empresas(){
             max-sm:h-48
             max-sm:row-span-1
             max-sm:col-span-1
+            min-[1600px]:h-112
             ${bgImg} 
             ${hover}
             rounded-md`}

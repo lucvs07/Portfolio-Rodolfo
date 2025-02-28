@@ -96,6 +96,7 @@ export default function Festas(){
             max-sm:col-span-1
             max-xl:h-88
             max-xl:col-span-3
+            min-[1600px]:h-112
             ${bgImg} 
             ${hover}
             rounded-md`}

@@ -71,6 +71,7 @@ export default function Social(){
             max-xl:row-span-1
             max-xl:col-span-2
             max-xl:h-88
+            min-[1600px]:h-216
             ${bgImg} 
             ${hover}
             rounded-md`}
