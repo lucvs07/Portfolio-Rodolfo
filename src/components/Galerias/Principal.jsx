@@ -9,7 +9,7 @@ export default function Principal(){
     return (
         <section className='grid grid-cols-3 grid-rows-6 gap-8 
         max-sm:grid-cols-1
-        max-sm:grid-rows-30
+        max-sm:grid-rows-12
         max-sm:my-16
         max-sm:mx-8
         max-xl:grid-rows-8
@@ -19,8 +19,8 @@ export default function Principal(){
             `w-full h-full
             row-span-2
             max-xl:col-span-3
+            max-sm:row-span-1
             max-sm:col-span-1
-            max-sm:row-span-3
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -34,7 +34,7 @@ export default function Principal(){
             row-span-2
             max-xl:col-span-3
             max-sm:col-span-1
-            max-sm:row-span-3
+            max-sm:row-span-1
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -64,7 +64,7 @@ export default function Principal(){
             max-xl:row-span-1
             max-xl:col-span-3
             max-sm:col-span-1
-            max-sm:row-span-3
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -78,7 +78,7 @@ export default function Principal(){
             row-span-2
             max-xl:row-span-1
             max-sm:col-span-1
-            max-sm:row-span-6
+            max-sm:row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -92,7 +92,7 @@ export default function Principal(){
             row-span-2
             max-xl:row-span-1
             max-sm:col-span-1
-            max-sm:row-span-5
+            max-sm:row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -106,7 +106,7 @@ export default function Principal(){
             row-span-3
             max-xl:row-span-1
             max-sm:col-span-1
-            max-sm:row-span-6
+            max-sm:row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -121,7 +121,7 @@ export default function Principal(){
             row-span-2
             max-xl:row-span-1
             max-xl:col-span-3
-            max-sm:row-span-5
+            max-sm:row-span-1
             max-sm:col-span-1
             ${bgImg} 
             ${hover}

@@ -9,7 +9,7 @@ export default function Festas(){
     return (
         <section className='grid grid-cols-3 grid-rows-6 gap-8 
         max-sm:grid-cols-1
-        max-sm:grid-rows-8
+        max-sm:grid-rows-7
         max-sm:my-16
         max-sm:mx-8
         sm:my-8 sm:mx-8
@@ -17,6 +17,7 @@ export default function Festas(){
           <div className={
             `w-full h-full
             row-span-2
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -42,6 +43,7 @@ export default function Festas(){
           <div className={
             `w-full h-full
             row-span-2
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -75,7 +77,7 @@ export default function Festas(){
           </div>
           <div className={
             `w-full h-64
-            max-sm:h-120
+            max-sm:h-72
             ${bgImg} 
             ${hover}
             rounded-md`}

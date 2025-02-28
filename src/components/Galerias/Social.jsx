@@ -9,7 +9,7 @@ export default function Social(){
     return (
         <section className='grid grid-cols-3 grid-rows-6 gap-8 
         max-sm:grid-cols-1
-        max-sm:grid-rows-18
+        max-sm:grid-rows-10
         max-sm:my-16
         max-sm:mx-8
         sm:my-8 sm:mx-8
@@ -17,7 +17,7 @@ export default function Social(){
           <div className={
             `w-full h-full
             row-span-2
-            max-sm:row-span-3
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -29,7 +29,7 @@ export default function Social(){
           <div className={
             `w-full h-full
             row-span-2
-            max-sm:row-span-3
+            max-sm:row-span-2
             ${bgImg}
             ${hover} 
             rounded-md`}
@@ -40,7 +40,7 @@ export default function Social(){
 
           <div className={
             `w-full h-full
-            max-sm:row-span-2
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -77,7 +77,7 @@ export default function Social(){
           <div className={
             `w-full h-full
             row-span-2
-            max-sm:row-span-3
+            max-sm:row-span-2
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -89,7 +89,7 @@ export default function Social(){
           <div className={
             `w-full h-full
             row-span-3
-            max-sm:row-span-3
+            max-sm:row-span-1
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -102,7 +102,7 @@ export default function Social(){
             `w-full h-full
             col-span-2
             row-span-2
-            max-sm:row-span-2
+            max-sm:row-span-1
             max-sm:col-span-1
             ${bgImg} 
             ${hover}

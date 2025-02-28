@@ -41,7 +41,6 @@ export default function Empresas(){
 
           <div className={
             `w-full h-full
-            max-sm:h-120
             ${bgImg} 
             ${hover}
             rounded-md`}
@@ -72,7 +71,6 @@ export default function Empresas(){
           </div>
           <div className={
             `w-full h-64
-            max-sm:h-full
             ${bgImg} 
             ${hover}
             rounded-md`}
