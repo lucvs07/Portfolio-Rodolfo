@@ -20,22 +20,22 @@
         "sociais":[
             "/images/galeria/sociais/sociais01.jpg",
             "/images/galeria/sociais/sociais02.jpg",
-            "/images/galeria/sociais/sociais03.jpg",
+            "/images/galeria/sociais/sociais08.jpg",
             "/images/galeria/sociais/sociais04.jpg",
             "/images/galeria/sociais/sociais05.jpg",
             "/images/galeria/sociais/sociais06.jpg",
             "/images/galeria/sociais/sociais07.jpg",
-            "/images/galeria/sociais/sociais08.jpg"
+            "/images/galeria/sociais/sociais03.jpg"
         ],
         "principais":[
             "/images/galeria/principal01.jpg",
-            "/images/galeria/principal02.jpg",
+            "/images/galeria/principal08.jpg",
             "/images/galeria/principal03.jpg",
             "/images/galeria/principal04.jpg",
             "/images/galeria/principal05.jpg",
             "/images/galeria/principal06.jpg",
             "/images/galeria/principal07.jpg",
-            "/images/galeria/principal08.jpg"
+            "/images/galeria/principal02.jpg"
         ]
     }
 }
