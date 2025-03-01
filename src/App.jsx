@@ -49,7 +49,7 @@ function App() {
         <section className='flex flex-col gap-0.5 mt-4 '>
           <h1 className='font-medium antialiased text-8xl text-center max-sm:text-4xl sm:text-6xl' >Rodolfo Rizzo</h1>
           <TitleSection title='Photographer' idName='home'/>
-          <nav className='flex flex-wrap justify-center gap-8 mt-4 pb-4 font-normal antialiased text-2xl text-center border-b-2 border-black dark:border-white max-sm:text-xl'>
+          <nav className='flex flex-wrap justify-center gap-8 mt-4 pb-4 font-normal antialiased text-2xl text-center border-b-2 border-black dark:border-white max-sm:text-[0.6rem]'>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#social'>Casamento</a>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#empresas'>Empresarial</a>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#festas'>Festas</a>
@@ -75,7 +75,7 @@ function App() {
         max-sm:mx-8
         sm:my-8 sm:mx-8
         xl:my-16 xl:mx-56' >
-          <div className='flex flex-col gap-4 items-center w-full p-4 row-span-2 justify-between'>
+          <div className='flex flex-col gap-4 items-center w-full p-4 row-span-2 justify-center'>
             <p className='font-normal antialiased text-2xl text-justify w-full max-sm:text-sm max-xl:text-xl'>
             Registrando momentos desde 2011, atuo com fotografia empresarial e cobertura fotográfica de eventos sociais, incluindo festas, casamentos intimistas e noivados
             </p>

@@ -28,7 +28,6 @@ export default function Footer(){
             xl:my-12
             max-sm:flex-col`}>
           <div className='flex flex-col gap-4 items-start'>
-                <h2 className='font-medium antialiased text-2xl text-center'>Seções</h2>
                 <nav className='flex flex-col justify-center gap-4  font-normal antialiased text-1xl '>
                     <a className={`${hoverText} hover:text-gray-300 cursor-pointer`} href='#home'>Home</a>
                     <a className={`${hoverText} hover:text-gray-300 cursor-pointer`} href='#social'>Casamento</a>
@@ -38,7 +37,6 @@ export default function Footer(){
                 </nav>
             </div>
             <div className='flex flex-col gap-4 items-start'>
-                <h2 className='font-medium antialiased text-2xl text-center'>Entre em Contato</h2>
                 <div className='flex items-center gap-4'>
                     <Envelope weight='fill' size={40} onClick={redirectToEmail}
                     className={`cursor-pointer ${hover}`}/>

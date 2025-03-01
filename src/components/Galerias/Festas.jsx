@@ -91,10 +91,9 @@ export default function Festas(){
           </div>
           <div className={
             `w-full h-64
-            max-sm:h-80
             max-sm:row-span-1
             max-sm:col-span-1
-            max-xl:h-88
+            max-xl:h-96
             max-xl:col-span-3
             min-[1600px]:h-112
             ${bgImg} 
