@@ -48,7 +48,7 @@ function App() {
       <main >
         <section className='flex flex-col gap-0.5 mt-4 '>
           <h1 className='font-medium antialiased text-8xl text-center max-sm:text-4xl sm:text-6xl' >Rodolfo Rizzo</h1>
-          <TitleSection title='Photographer' idName='home'/>
+          <TitleSection title='Fotógrafo' idName='home'/>
           <nav className='flex flex-wrap justify-center gap-8 mt-4 pb-4 font-normal antialiased text-2xl text-center border-b-2 border-black dark:border-white max-sm:text-[0.6rem]'>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#social'>Casamento</a>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#empresas'>Empresarial</a>
