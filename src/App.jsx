@@ -8,13 +8,12 @@ import Festas from './components/Galerias/Festas.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { CaretUp } from '@phosphor-icons/react'
 
-import {useState, useEffect} from 'react'
-
+import { useState, useEffect } from 'react'
 
 function App() {
   const [result, SetResult] = useState('');
 
-  const apiKey= import.meta.env.VITE_API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,7 +44,7 @@ function App() {
     });
     const data = await response.json();
 
-    if (data.success){
+    if (data.success) {
       SetResult('Formulário enviado com sucesso!')
       console.log(FormData);
       console.log(result)
@@ -56,22 +55,25 @@ function App() {
     }
   }
 
-
-
   const hover = 'transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102'
+
+  const handleNavClick = (event, id) => {
+    event.preventDefault();
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <>
       <main>
         <section className='flex flex-col gap-0.5 mt-4'>
-          <h1 className='font-medium antialiased text-8xl text-center max-sm:text-4xl sm:text-6xl'>Rodolfo Rizzo</h1>
+          <h1 className='font-medium antialiased text-8xl text-center max-sm:text-4xl sm:text-6xl mt-8 mb-8'>Rodolfo Rizzo</h1>
           <TitleSection title='Fotógrafo' idName='home'/>
           <nav className='flex flex-wrap justify-center gap-8 mt-4 pb-4 font-normal antialiased text-2xl text-center border-b-2 border-black dark:border-white max-sm:text-[0.8rem] max-sm:gap-2'>
-            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#social'>Casamento</a>
-            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#empresas'>Empresarial</a>
-            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#festas'>Festas</a>
-            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#sobre'>Sobre</a>
-            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#contato'>Contato</a>
+            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#social' onClick={(e) => handleNavClick(e, 'social')}>Casamento</a>
+            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#empresas' onClick={(e) => handleNavClick(e, 'empresas')}>Empresarial</a>
+            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#festas' onClick={(e) => handleNavClick(e, 'festas')}>Festas</a>
+            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#sobre' onClick={(e) => handleNavClick(e, 'sobre')}>Sobre</a>
+            <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#contato' onClick={(e) => handleNavClick(e, 'contato')}>Contato</a>
           </nav>
         </section>
         <Principal />

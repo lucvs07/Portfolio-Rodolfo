@@ -7,25 +7,30 @@
             "/images/galeria/aniversarios/aniversario04.jpg",
             "/images/galeria/aniversarios/aniversario05.jpg",
             "/images/galeria/aniversarios/aniversario06.jpg",
-            "/images/galeria/aniversarios/aniversario07.jpg"
+            "/images/galeria/aniversarios/aniversario07.jpg",
+            "/images/galeria/aniversarios/aniversario08.jpg"
         ],
         "empresas":[
             "/images/galeria/empresas/empresa01.jpg",
+            "/images/galeria/empresas/empresa07.jpg",
             "/images/galeria/empresas/empresa02.jpg",
             "/images/galeria/empresas/empresa03.jpg",
             "/images/galeria/empresas/empresa04.jpg",
             "/images/galeria/empresas/empresa05.jpg",
-            "/images/galeria/empresas/empresa06.jpg"	
+            "/images/galeria/empresas/empresa06.jpg"
+            	
         ],
         "sociais":[
-            "/images/galeria/sociais/sociais01.jpg",
+            
             "/images/galeria/sociais/sociais02.jpg",
-            "/images/galeria/sociais/sociais08.jpg",
-            "/images/galeria/sociais/sociais04.jpg",
-            "/images/galeria/sociais/sociais05.jpg",
-            "/images/galeria/sociais/sociais06.jpg",
             "/images/galeria/sociais/sociais07.jpg",
-            "/images/galeria/sociais/sociais03.jpg"
+            "/images/galeria/sociais/sociais03.jpg",
+            "/images/galeria/sociais/sociais06.jpg",
+            "/images/galeria/sociais/sociais01.jpg",
+            "/images/galeria/sociais/sociais05.jpg",
+            "/images/galeria/sociais/sociais04.jpg",
+            "/images/galeria/sociais/sociais08.jpg"
+            
         ],
         "principais":[
             "/images/galeria/principal01.jpg",
