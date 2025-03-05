@@ -6,14 +6,31 @@ import Empresas from './components/Galerias/Empresas.jsx'
 import TitleSection from './components/TitleSection/TitleSection.jsx'
 import Festas from './components/Galerias/Festas.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import { CaretUp } from '@phosphor-icons/react'
 
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 
 function App() {
   const [result, SetResult] = useState('');
 
   const apiKey= import.meta.env.VITE_API_KEY;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const button = document.getElementById('back-to-top');
+      if (window.scrollY > 300) {
+        button.classList.remove('hidden');
+        button.classList.add('opacity-100');
+      } else {
+        button.classList.add('hidden');
+        button.classList.remove('opacity-100');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -45,11 +62,11 @@ function App() {
 
   return (
     <>
-      <main >
-        <section className='flex flex-col gap-0.5 mt-4 '>
-          <h1 className='font-medium antialiased text-8xl text-center max-sm:text-4xl sm:text-6xl' >Rodolfo Rizzo</h1>
+      <main>
+        <section className='flex flex-col gap-0.5 mt-4'>
+          <h1 className='font-medium antialiased text-8xl text-center max-sm:text-4xl sm:text-6xl'>Rodolfo Rizzo</h1>
           <TitleSection title='Fotógrafo' idName='home'/>
-          <nav className='flex flex-wrap justify-center gap-8 mt-4 pb-4 font-normal antialiased text-2xl text-center border-b-2 border-black dark:border-white max-sm:text-[0.5rem]'>
+          <nav className='flex flex-wrap justify-center gap-8 mt-4 pb-4 font-normal antialiased text-2xl text-center border-b-2 border-black dark:border-white max-sm:text-[0.8rem] max-sm:gap-2'>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#social'>Casamento</a>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#empresas'>Empresarial</a>
             <a className={`${hover} hover:text-gray-300 cursor-pointer`} href='#festas'>Festas</a>
@@ -117,6 +134,16 @@ function App() {
         </section>
       </main>
       <Footer />
+      <button
+        id='back-to-top'
+        className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 p-4 bg-black text-white rounded-full shadow-lg hidden transition-opacity duration-300 cursor-pointer ${hover} group`}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        <span className='w-32 absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm p-2 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center'>
+          Voltar ao início
+        </span>
+        <CaretUp weight='bold' size={24}/>
+      </button>
     </>
   )
 }

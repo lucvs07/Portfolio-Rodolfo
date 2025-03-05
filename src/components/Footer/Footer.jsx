@@ -36,11 +36,11 @@ export default function Footer(){
                     <a className={`${hoverText} hover:text-gray-300 cursor-pointer`} href='#galeria'>Galeria</a>
                 </nav>
             </div>
-            <div className='flex flex-col gap-4 items-start'>
+            <div className='flex flex-col gap-4 items-start max-sm:text-sm'>
                 <div className='flex items-center gap-4'>
                     <Envelope weight='fill' size={40} onClick={redirectToEmail}
                     className={`cursor-pointer ${hover}`}/>
-                    <p className={`font-normal antialiased text-1xl ${hoverText}`} onClick={redirectToEmail}>rodolfo@macaverdefilmes.com</p>
+                    <p className={`font-normal antialiased text-1xl ${hoverText} `} onClick={redirectToEmail}>rodolfo@macaverdefilmes.com</p>
                 </div>
     
                 <div className='flex items-center gap-4'>
