@@ -104,7 +104,7 @@ function App() {
             </p>
             
             <p className='font-normal antialiased text-2xl text-justify w-full max-sm:text-sm max-xl:text-xl'>
-            Sou fotógrafo em São Paulo e atendo regiões próximas, garantindo fotos de alta qualidade que valorizam cada momento com naturalidade e profissionalismo.
+            Sou fotógrafo em São Paulo e atendo regiões próximas, garantindo fotos de alta qualidade que valorizam cada momento com naturalidade.
             </p>
           </div>
           <div className='w-full h-160 bg-[url(/images/rodolfo.jpg)] bg-cover bg-center row-span-2 rounded-md'></div>

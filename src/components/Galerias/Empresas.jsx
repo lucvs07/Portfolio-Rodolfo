@@ -4,11 +4,11 @@ import images from '../../assets/data/images.json'
 export default function Empresas() {
   const hover = 'transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102'
   const img = images.galeria.empresas
-  const bgImg = 'bg-cover bg-center'
+  const bgImg = 'bg-cover bg-top'
   
 
   return (
-    <section className='grid md:grid-cols-3 gap-4 my-8 mx-8 xl:my-16 xl:mx-40
+    <section className='grid md:grid-cols-3 gap-4 my-8 mx-8 xl:my-16 xl:mx-26
     max-md:auto-rows-[200px]
     max-2xl:auto-rows-[300px]
     xl:auto-rows-[450px]
