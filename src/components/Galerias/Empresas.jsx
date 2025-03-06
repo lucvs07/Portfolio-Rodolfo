@@ -4,7 +4,7 @@ import images from '../../assets/data/images.json'
 export default function Empresas() {
   const hover = 'transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102'
   const img = images.galeria.empresas
-  const bgImg = 'bg-cover bg-top'
+  const bgImg = 'bg-cover bg-center'
   
 
   return (
