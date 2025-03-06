@@ -17,7 +17,8 @@ export default function Social() {
         <div
           key={index}
           className={`${hover} ${bgImg} rounded-md h-full w-full
-            ${index === 7 ? 'xl:col-span-2 md:col-span-2 min-[1023px]:bg-center' : ''}`}
+            ${index === 7 ? 'xl:col-span-2 md:col-span-2 min-[1023px]:bg-center' : ''}
+            ${[0, 1, 3, ].includes(index) ? 'max-sm:row-span-2' : ''}`}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
       ))}

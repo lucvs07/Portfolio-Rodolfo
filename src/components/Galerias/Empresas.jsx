@@ -17,7 +17,7 @@ export default function Empresas() {
         <div
           key={index}
           className={`${hover} ${bgImg} rounded-md h-full w-full
-            ${index === 0|| index === 2 ? 'md:col-span-2' : ''}`}
+            ${[0, 2].includes(index) ? 'md:col-span-2' : ''}`}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
       ))}

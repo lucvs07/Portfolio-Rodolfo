@@ -1,28 +1,29 @@
 principal01 - 2047 x 1356
-principal02 - 6000 x 4000
+principal08 - 4928 x 3264
 principal03 - 6000 x 4000
 principal04 - 4928 x 3264
 principal05 - 3264 x 4928
 principal06 - 3264 x 4928
 principal07 - 3264 x 4928
-principal08 - 4928 x 3264
+principal02 - 6000 x 4000
 
-sociais01 - 3188 x 4234
 sociais02 - 3264 x 4928
-sociais03 - 4928 x 3264
-sociais04 - 4928 x 3264
-sociais05 - 4928 x 3264
-sociais06 - 3264 x 4928
 sociais07 - 3264 x 4928
+sociais03 - 4928 x 3264
+sociais06 - 3264 x 4928
+sociais01 - 3188 x 4234
+sociais05 - 4928 x 3264
+sociais04 - 4928 x 3264
 sociais08 - 3264 x 4928
 
 empresa01 - 4928 x 3264
+empresa07 - 4928 x 3264
 empresa02 - 4928 x 3264
 empresa03 - 4928 x 3264
 empresa04 - 4928 x 3264
 empresa05 - 4554 x 3016
 empresa06 - 3895 x 2888
-empresa07 - 4928 x 3264
+
 
 aniversario01 - 3264 x 4928
 aniversario02 - 4928 x 3264

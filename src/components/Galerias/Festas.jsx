@@ -17,7 +17,7 @@ export default function Festas() {
         <div
           key={index}
           className={`${hover} ${bgImg} rounded-md h-full w-full
-            ${index === 0 || index === 2 || index === 3 ? 'row-span-2' : ''}
+            ${[0, 2, 3].includes(index) ? 'row-span-2' : ''}
             ${index === 1 ? 'md:row-span-2 md:col-span-2' : ''}
             ${index === 6 ? 'md:col-span-2 md:row-span-2' : ''}`}
           style={{ backgroundImage: `url(${img})` }}

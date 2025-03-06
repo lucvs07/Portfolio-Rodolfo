@@ -16,7 +16,7 @@ export default function Principal() {
         <div
           key={index}
           className={`${hover} ${bgImg} rounded-md h-full w-full
-            ${index === 4 || index === 5 || index === 6 ? 'row-span-2' : ''}
+            ${[4, 5, 6].includes(index) ? 'row-span-2' : ''}
             ${index === 7 ? 'md:col-span-2' : ''}`}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
